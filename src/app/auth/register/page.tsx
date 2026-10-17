@@ -19,6 +19,7 @@ export default function RegisterPage() {
     setLoading(true)
     setMessage(null)
 
+    // สมัครสมาชิกผ่าน Supabase Auth
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -41,6 +42,10 @@ export default function RegisterPage() {
         type: 'success',
         text: 'ลงทะเบียนสำเร็จ! บัญชีของคุณอยู่ระหว่างรอผู้ดูแลระบบ (Admin) ตรวจสอบและอนุมัติสิทธิ์เข้าใช้งาน',
       })
+      // ล้างข้อมูลฟอร์ม
+      setFullName('')
+      setEmail('')
+      setPassword('')
       setLoading(false)
     }
   }
@@ -70,7 +75,7 @@ export default function RegisterPage() {
               type="text"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
-              placeholder="ครูสมชาย ใจดี"
+              placeholder="ครูซูลกิฟลี วาเอนก"
               className="w-full p-3 border border-slate-300 rounded-xl text-slate-800"
               required
             />

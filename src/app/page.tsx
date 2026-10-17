@@ -14,7 +14,7 @@ import {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col justify-between">
-      {/* NAVBAR */}
+      {/* 1. NAVBAR */}
       <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -50,7 +50,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* HERO SECTION */}
+      {/* 2. HERO SECTION */}
       <main className="flex-1">
         <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-emerald-900/5 via-slate-50 to-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -86,7 +86,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* STATS SECTION */}
+        {/* 3. STATS SECTION */}
         <section className="py-10 bg-white border-y border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -110,7 +110,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* FEATURES SECTION */}
+        {/* 4. FEATURES SECTION */}
         <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
@@ -165,7 +165,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      {/* FOOTER */}
+      {/* 5. FOOTER */}
       <footer className="bg-emerald-950 text-emerald-200 py-10 border-t border-emerald-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">

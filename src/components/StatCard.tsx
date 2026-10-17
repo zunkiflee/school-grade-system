@@ -8,12 +8,18 @@ interface StatCardProps {
   colorStyle?: 'primary' | 'success' | 'warning' | 'danger'
 }
 
-export default function StatCard({ title, value, subText, icon, colorStyle = 'primary' }: StatCardProps) {
+export default function StatCard({
+  title,
+  value,
+  subText,
+  icon,
+  colorStyle = 'primary',
+}: StatCardProps) {
   const bgColors = {
     primary: 'bg-emerald-50 border-emerald-200 text-emerald-900',
     success: 'bg-green-50 border-green-200 text-green-900',
     warning: 'bg-amber-50 border-amber-200 text-amber-900',
-    danger: 'bg-rose-50 border-rose-200 text-rose-900'
+    danger: 'bg-rose-50 border-rose-200 text-rose-900',
   }
 
   return (

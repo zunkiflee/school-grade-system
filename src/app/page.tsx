@@ -14,7 +14,7 @@ import {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col justify-between">
-      {/* 1. HEADER / NAVBAR */}
+      {/* 1. NAVBAR */}
       <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -86,7 +86,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 3. QUICK STATS */}
+        {/* 3. STATS SECTION */}
         <section className="py-10 bg-white border-y border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -110,7 +110,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 4. FEATURES GRID */}
+        {/* 4. FEATURES SECTION */}
         <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
@@ -122,43 +122,43 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center mb-4">
                 <BookOpen className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-slate-800 mb-2">รองรับ 2 หมวดวิชา</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                บริหารจัดการข้อมูลทั้งกลุ่มสาระวิชาสามัญ (10-11 วิชา) และหมวดวิชาอิสลามศึกษา (8 วิชา) ได้อย่างเป็นระบบ
+                บริหารจัดการข้อมูลทั้งกลุ่มสาระวิชาสามัญ (10-11 วิชา) และหมวดวิชาอิสลามศึกษา (8 วิชา)
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="w-12 h-12 bg-blue-100 text-blue-800 rounded-xl flex items-center justify-center mb-4">
                 <BarChart3 className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-slate-800 mb-2">Dashboard แสดงผลสัมฤทธิ์</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                แสดงสถิติผลการเรียน การกระจายตัวของเกรด และคะแนนเฉลี่ยประจำห้องเรียนด้วยกราฟแบบ Micro View
+                แสดงสถิติผลการเรียน การกระจายตัวของเกรด และคะแนนเฉลี่ยประจำห้องเรียนด้วยกราฟ
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="w-12 h-12 bg-amber-100 text-amber-800 rounded-xl flex items-center justify-center mb-4">
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-slate-800 mb-2">คัดกรองกลุ่มต้องพัฒนา</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                จำแนกรายชื่อนักเรียนที่มีคะแนนต่ำกว่าเกณฑ์อัตโนมัติ เพื่อวางแผนซ่อมเสริมและติดตามรายบุคคล
+                จำแนกรายชื่อนักเรียนที่มีคะแนนต่ำกว่าเกณฑ์อัตโนมัติ เพื่อวางแผนซ่อมเสริมรายบุคคล
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="w-12 h-12 bg-purple-100 text-purple-800 rounded-xl flex items-center justify-center mb-4">
                 <FileSpreadsheet className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-slate-800 mb-2">ส่งออก PDF / ปพ.6 ง่าย</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                รองรับการสั่งพิมพ์และบันทึกรายงานสรุปเป็นเอกสาร PDF สำหรับรายงานผู้บริหารหรือแนบเล่ม SAR
+                รองรับการสั่งพิมพ์และบันทึกรายงานสรุปเป็นเอกสาร PDF สำหรับรายงานผู้บริหาร
               </p>
             </div>
           </div>

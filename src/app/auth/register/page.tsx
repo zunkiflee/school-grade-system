@@ -19,11 +19,16 @@ export default function RegisterPage() {
     setLoading(true)
     setMessage(null)
 
-    // สมัครสมาชิกผ่าน Supabase Auth
+    // ดึง Domain ปัจจุบันเพื่อส่งให้ Supabase Redirect ถูกต้อง
+    const redirectUrl = typeof window !== 'undefined' 
+      ? `${window.location.origin}/auth/login` 
+      : undefined
+
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
       options: {
+        emailRedirectTo: redirectUrl,
         data: {
           full_name: fullName,
           teacher_type: teacherType,
@@ -42,7 +47,6 @@ export default function RegisterPage() {
         type: 'success',
         text: 'ลงทะเบียนสำเร็จ! บัญชีของคุณอยู่ระหว่างรอผู้ดูแลระบบ (Admin) ตรวจสอบและอนุมัติสิทธิ์เข้าใช้งาน',
       })
-      // ล้างข้อมูลฟอร์ม
       setFullName('')
       setEmail('')
       setPassword('')
